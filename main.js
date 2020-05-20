@@ -3,7 +3,7 @@ const socket = io('https://webrtc1406.herokuapp.com/');
 $('#div-chat').hide();
 
 function openStream() { //mở stream video
-    const config = { audio: false, video: true };
+    const config = { audio: true, video: true };
     return navigator.mediaDevices.getUserMedia(config);
 }
 
